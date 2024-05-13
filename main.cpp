@@ -12,7 +12,7 @@
 using namespace std;
 
 int main() {
-	//测试案例拾参数别输入贰（会寄），输壹没事
+	
 	test10();
 #if 0
 	test11();
