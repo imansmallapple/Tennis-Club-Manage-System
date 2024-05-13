@@ -7,8 +7,6 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Development](#development)
-- [Contribute](#contribute)
-- [License](#license)
 
 # Installation
 To use this program, please use the following command to clone the repo:
@@ -16,8 +14,6 @@ To use this program, please use the following command to clone the repo:
 git init
 git clone git@github.com:imansmallapple/Tennis-Club-Manage-System.git
 ```
-
-https://github.com/navendu-pottekkat/nsfw-filter.git
 [(Back to top)](#table-of-contents)
 
 # Usage
@@ -26,8 +22,4 @@ https://github.com/navendu-pottekkat/nsfw-filter.git
 # Development
 [(Back to top)](#table-of-contents)
 
-# Contribute
-[(Back to top)](#table-of-contents)
 
-# License
-[(Back to top)](#table-of-contents)
