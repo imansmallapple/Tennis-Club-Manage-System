@@ -1,10 +1,8 @@
-# Project Title
-
-# Quickstart/Demo
+# Tennis Club Management System
 
 # Table of Contents
 
-- [Project Title](#project-title)
+- [Tennis Club Management System](#project-title)
 - [Quickstart/Demo](#quickstartdemo)
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
