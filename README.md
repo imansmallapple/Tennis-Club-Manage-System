@@ -2,7 +2,7 @@
 
 # Table of Contents
 
-- [Tennis Club Management System](#project-title)
+- [Tennis Club Management System](#Tennis-Club-Management-System)
 - [Quickstart/Demo](#quickstartdemo)
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
