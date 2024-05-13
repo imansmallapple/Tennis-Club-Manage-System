@@ -4,13 +4,10 @@ This project is a tennis club manage system and it designed for tennis club mana
 
 - [Tennis Club Management System](#Tennis-Club-Management-System)
 - [Table of Contents](#table-of-contents)
-- [Functionaility](#Functionaility)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Development](#development)
-# Functionaility
 
-[(Back to top)](#Functionaility)
 # Installation
 To use this program, please use the following command to clone the repo:
 ```c
