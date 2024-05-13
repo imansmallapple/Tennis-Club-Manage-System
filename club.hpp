@@ -21,6 +21,8 @@ private:
 	//string* activity;//to be considered
 	int maxCourt;//the number of court is limited by club space
 	int id;//club id number
+	//print basic interface information
+	void showMenu();
 public:
 	Club(int courtNumber, string name, string location, int id) :maxCourt(courtNumber), name(name), location(location), id(id) {};//count number 1-5
 	 ~Club();//****
@@ -90,8 +92,5 @@ public:
 	//get the number of players in the club
 	size_t getPlayerNumber();
 	//interface is used to interact with user with obvious instructions
-	//void interface();
-	//print basic interface information
-	//void showMenu();
-	
+	void interface();
 };

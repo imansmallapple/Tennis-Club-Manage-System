@@ -12,9 +12,10 @@
 using namespace std;
 
 int main() {
-	
-	test10();
+	Club club(1, "Tennis Club", "Zloty Tarsy", 01);
+	club.interface();
 #if 0
+	test10();
 	test11();
 	test02();
 	test03();

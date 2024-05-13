@@ -526,300 +526,306 @@ void Club::updatePlayerData(int playerId) {
 	}
 }
 //remove menu
-//void Club::showMenu() {
-//	cout << "---------------------------------------------------------------------------------" << endl;
-//	//check court list, coach list or player list
-//	cout << "--------------------1. Check list information            ------------------------" << endl;
-//	//find one member in the club(player or coach)
-//	cout << "--------------------2. Check assignment                  ------------------------" << endl;
-//	//add player, coach or court
-//	cout << "--------------------3. Add member or buy court           ------------------------" << endl;
-//	//remove player, coach or sell court
-//	cout << "--------------------4. Remove member or sell court       ------------------------" << endl;
-//	//modify information of player, coach or court
-//	cout << "--------------------5. Member assignment                 ------------------------" << endl;
-//	//quit system
-//	cout << "--------------------6. Exit system                       ------------------------" << endl;
-//	cout << "---------------------------------------------------------------------------------" << endl;
-//}
-//void Club::interface() {
-//	int key = 0;
-//	bool circle = false;
-//	while (!circle) {
-//		showMenu();
-//		cout << "Welcome to tennis club manage system! Please enter your choice: ";
-//		cin >> key;
-//		while (key != 1 && key != 2 && key != 3 && key != 4 && key != 5 && key != 6) {
-//			cin >> key;
-//			cin.clear();
-//			cin.ignore();
-//			cout << "Invalid input! Please enter correct option: ";
-//		}
-//		switch (key) {
-//		case 1:
-//			int choice1;
-//			cout << "-------------------------" << endl;
-//			cout << "1. Check court list" << endl;
-//			cout << "2. Check coach list" << endl;
-//			cout << "3. Check player list" << endl;
-//			cout << "-------------------------" << endl;
-//			cout << "Please enter which list item you want to check: ";
-//			cin >> choice1;
-//			while (choice1 != 1 && choice1 != 2 && choice1 != 3) {
-//				cin >> choice1;
-//				cin.clear();
-//				cin.ignore();
-//				cout << "Invalid input! Please enter correct option: " << endl;
-//			}
-//			switch (choice1) {
-//			case 1:
-//				cout << "-------------------------" << endl;
-//				cout << "Court list: " << endl;
-//				printCourtList();
-//				cout << "-------------------------" << endl;
-//				break;
-//			case 2:
-//				cout << "-------------------------" << endl;
-//				cout << "Coach list: " << endl;
-//				printCoachList();
-//				cout << "-------------------------" << endl;
-//				break;
-//			case 3:
-//				cout << "-------------------------" << endl;
-//				cout << "Player list: " << endl;
-//				printPlayerList();
-//				cout << "-------------------------" << endl;
-//				break;
-//			default:
-//				cin.clear();
-//				cin.ignore();
-//				break;
-//			}
-//			break;
-//		case 2:
-//			int choice2;
-//			cout << "-------------------------" << endl;
-//			cout << "1. Check coach assignment situation" << endl;
-//			cout << "2. Check player assignment situation" << endl;
-//			cout << "-------------------------" << endl;
-//			cout << "Please enter which assignment situation you want to check: ";
-//			cin >> choice2;
-//			while (choice2 != 1 && choice2 != 2) {
-//				cin >> choice2;
-//				cin.clear();
-//				cin.ignore();
-//				cout << "Invalid input! Please enter correct option: " << endl;
-//			}
-//			switch (choice2) {
-//			case 1:
-//				int courtId;
-//				cout << "-------------------------" << endl;
-//				cout << "Please enter court id: ";
-//				cin >> courtId;
-//				cout << "-------------------------" << endl;
-//				cout <<"Court with id: "<<courtId<<" assignment situation: " << endl;
-//				PrintCoach(courtId);
-//				cout << "-------------------------" << endl;
-//				break;
-//			case 2:
-//				int coachId;
-//				cout << "-------------------------" << endl;
-//				cout << "Please enter coach id: ";
-//				cin >> coachId;
-//				cout << "-------------------------" << endl;
-//				cout << "Coach with id: " << coachId << " assignment situation: " << endl;
-//				PrintPlayer(coachId);
-//				cout << "-------------------------" << endl;
-//				break;
-//			default:
-//				cin.clear();
-//				cin.ignore();
-//				break;
-//			}
-//			break;
-//		case 3:
-//			int choice3;
-//			cout << "-------------------------" << endl;
-//			cout << "1. Add a coach to the club" << endl;
-//			cout << "2. Add a player to the club" << endl;
-//			cout << "3. Buy a court to the club" << endl;
-//			cout << "-------------------------" << endl;
-//			cout << "Please enter your choice: ";
-//			cin >> choice3;
-//			while (choice3 != 1 && choice3 != 2 && choice3 != 3) {
-//				cin >> choice3;
-//				cin.clear();
-//				cin.ignore();
-//				cout << "Invalid input! Please enter correct option: " << endl;
-//			}
-//			switch (choice3) {
-//			case 1:
-//			{
-//				string coachName;//need brackets to use variable inside 'case'
-//				int coachId;
-//				int coachExperience;
-//				cout << "-------------------------" << endl;
-//				cout << "Please enter new coach's name: ";
-//				cin.get();
-//				getline(cin, coachName);
-//				cout << "Please enter new coach's id: ";
-//				cin >> coachId;
-//				cout << "Please enter new coach's experience: ";
-//				cin >> coachExperience;
-//				cout << "-------------------------" << endl;
-//				AddCoach(coachName, coachId, coachExperience);
-//			}
-//				break;
-//			case 2:
-//			{
-//				string playerName;
-//				int playerId;
-//				int playerExperience;
-//				float winRate;
-//				cout << "-------------------------" << endl;
-//				cout << "Please enter new player's name: ";
-//				cin.get();
-//				getline(cin, playerName);
-//				cout << "Please enter new player's id: ";
-//				cin >> playerId;
-//				cout << "Please enter new player's experience: ";
-//				cin >> playerExperience;
-//				cout << "Please enter new player's win-rate: ";
-//				cin >> winRate;
-//				cout << "-------------------------" << endl;
-//				AddPlayer(playerName, playerId, playerExperience, winRate);
-//			}
-//				break;
-//			case 3:
-//				int courtId;
-//				cout << "Please enter new court's id: ";
-//				cin >> courtId;
-//				cout << "-------------------------" << endl;
-//				AddCourt(courtId);
-//			default:
-//				cin.clear();
-//				cin.ignore();
-//				break;
-//			}
-//			break;
-//		case 4:
-//			int choice4;
-//			cout << "-------------------------" << endl;
-//			cout << "1. Sell court in the club" << endl;
-//			cout << "2. Fire coach in the club" << endl;
-//			cout << "3. Fire player in the club" << endl;
-//			cout << "-------------------------" << endl;
-//			cout << "Please enter your option: ";
-//			cin >> choice4;
-//			while (choice4 != 1 && choice4 != 2 && choice4 != 3) {
-//				cin >> choice4;
-//				cin.clear();
-//				cin.ignore();
-//				cout << "Invalid input! Please enter correct option: " << endl;
-//			}
-//			switch (choice4) {
-//			case 1:
-//				int courtID;
-//				cout << "-------------------------" << endl;
-//				printCourtList();
-//				cout << "-------------------------" << endl;
-//				cout << "Please enter court id which you want sell: ";
-//				cin >> courtID;
-//				RemoveCourt(courtID);
-//				cout << "-------------------------" << endl;
-//				break;
-//			case 2:
-//				int coachID;
-//				cout << "-------------------------" << endl;
-//				printCoachList();
-//				cout << "-------------------------" << endl;
-//				cout << "Please enter coach id whom you want fire: ";
-//				cin >> coachID;
-//				RemoveCoach(coachID);
-//				cout << "-------------------------" << endl;
-//				break;
-//			case 3:
-//				int playerID;
-//				cout << "-------------------------" << endl;
-//				printPlayerList();
-//				cout << "-------------------------" << endl;
-//				cout << "Please enter player id whom you want fire: ";
-//				cin >> playerID;
-//				RemovePlayer(playerID);
-//				cout << "-------------------------" << endl;
-//				break;
-//			default:
-//				cin.clear();
-//				cin.ignore();
-//				break;
-//			}
-//			break;
-//		case 5:
-//			int choice5;
-//			cout << "-------------------------" << endl;
-//			cout << "1. Assign a player to a coach" << endl;
-//			cout << "2. Assign a coach to a court" << endl;
-//			cout << "-------------------------" << endl;
-//			cout << "Please enter your choice: ";
-//			cin >> choice5;
-//			while (choice5 != 1 && choice5 != 2) {
-//				cin >> choice5;
-//				cin.clear();
-//				cin.ignore();
-//				cout << "Invalid input! Please enter correct option: " << endl;
-//			}
-//			switch (choice5) {
-//			case 1:
-//			{
-//				int CoachId;
-//				int PlayerId;
-//				cout << "-------------------------" << endl;
-//				printCoachList();
-//				cout << "-------------------------" << endl;
-//				cout << "Please enter the coach id: ";
-//				cin >> CoachId;
-//				cout << "-------------------------" << endl;
-//				printPlayerList();
-//				cout << "Please enter the player id: ";
-//				cin >> PlayerId;
-//				AssignPlayerToCoach(PlayerId, CoachId);
-//				cout << "-------------------------" << endl;
-//			}
-//				break;
-//			case 2:
-//				int CoachID;
-//				int CourtId;
-//				cout << "-------------------------" << endl;
-//				printCourtList();
-//				cout << "-------------------------" << endl;
-//				cout << "Please enter the court id: ";
-//				cin >> CourtId;
-//				cout << "-------------------------" << endl;
-//				printCoachList();
-//				cout << "Plwase enter the coach id: ";
-//				cin >> CoachID;
-//				AssignCoachToCourt(CoachID, CourtId);
-//				cout << "-------------------------" << endl;
-//				break;
-//			default:
-//				cin.clear();
-//				cin.ignore();
-//				break;
-//			}
-//			break;
-//		case 6:
-//			cout << "Thank you for using my system!" << endl;
-//			circle = true;
-//			break;
-//		default:
-//			cin.clear();
-//			cin.ignore();
-//			break;
-//		}
-//		system("pause");
-//		system("cls");
-//	}
-//}
+void Club::showMenu() {
+	cout << "---------------------------------------------------------------------------------" << endl;
+	//check court list, coach list or player list
+	cout << "--------------------1. Check list information            ------------------------" << endl;
+	//find one member in the club(player or coach)
+	cout << "--------------------2. Check assignment                  ------------------------" << endl;
+	//add player, coach or court
+	cout << "--------------------3. Add member or buy court           ------------------------" << endl;
+	//remove player, coach or sell court
+	cout << "--------------------4. Remove member or sell court       ------------------------" << endl;
+	//modify information of player, coach or court
+	cout << "--------------------5. Member assignment                 ------------------------" << endl;
+	//quit system
+	cout << "--------------------6. Exit system                       ------------------------" << endl;
+	cout << "---------------------------------------------------------------------------------" << endl;
+}
+void Club::interface() {
+	int key = 0;
+	bool circle = false;
+	while (!circle) {
+		showMenu();
+		cout << "Welcome to tennis club manage system! Please enter your choice: ";
+		cin >> key;
+		while (key != 1 && key != 2 && key != 3 && key != 4 && key != 5 && key != 6) {
+			cin >> key;
+			cin.clear();
+			cin.ignore();
+			cout << "Invalid input! Please enter correct option: ";
+		}
+		switch (key) {
+		case 1:
+			int choice1;
+			cout << "-------------------------" << endl;
+			cout << "1. Check court list" << endl;
+			cout << "2. Check coach list" << endl;
+			cout << "3. Check player list" << endl;
+			cout << "-------------------------" << endl;
+			cout << "Please enter which list item you want to check: ";
+			cin >> choice1;
+			while (choice1 != 1 && choice1 != 2 && choice1 != 3) {
+				cin >> choice1;
+				cin.clear();
+				cin.ignore();
+				cout << "Invalid input! Please enter correct option: " << endl;
+			}
+			switch (choice1) {
+			case 1:
+				cout << "-------------------------" << endl;
+				cout << "Court list: " << endl;
+				printCourtList();
+				cout << "-------------------------" << endl;
+				break;
+			case 2:
+				cout << "-------------------------" << endl;
+				cout << "Coach list: " << endl;
+				printCoachList();
+				cout << "-------------------------" << endl;
+				break;
+			case 3:
+				cout << "-------------------------" << endl;
+				cout << "Player list: " << endl;
+				printPlayerList();
+				cout << "-------------------------" << endl;
+				break;
+			default:
+				cin.clear();
+				cin.ignore();
+				break;
+			}
+			break;
+		case 2:
+			int choice2;
+			cout << "-------------------------" << endl;
+			cout << "1. Check coach assignment situation" << endl;
+			cout << "2. Check player assignment situation" << endl;
+			cout << "-------------------------" << endl;
+			cout << "Please enter which assignment situation you want to check: ";
+			cin >> choice2;
+			while (choice2 != 1 && choice2 != 2) {
+				cin >> choice2;
+				cin.clear();
+				cin.ignore();
+				cout << "Invalid input! Please enter correct option: " << endl;
+			}
+			switch (choice2) {
+			case 1:
+				int courtId;
+				cout << "-------------------------" << endl;
+				cout << "Please enter court id: ";
+				cin >> courtId;
+				cout << "-------------------------" << endl;
+				cout <<"Court with id: "<<courtId<<" assignment situation: " << endl;
+				PrintCoach(courtId);
+				cout << "-------------------------" << endl;
+				break;
+			case 2:
+				int coachId;
+				cout << "-------------------------" << endl;
+				cout << "Please enter coach id: ";
+				cin >> coachId;
+				cout << "-------------------------" << endl;
+				cout << "Coach with id: " << coachId << " assignment situation: " << endl;
+				PrintPlayer(coachId);
+				cout << "-------------------------" << endl;
+				break;
+			default:
+				cin.clear();
+				cin.ignore();
+				break;
+			}
+			break;
+		case 3:
+			int choice3;
+			cout << "-------------------------" << endl;
+			cout << "1. Add a coach to the club" << endl;
+			cout << "2. Add a player to the club" << endl;
+			cout << "3. Buy a court to the club" << endl;
+			cout << "-------------------------" << endl;
+			cout << "Please enter your choice: ";
+			cin >> choice3;
+			while (choice3 != 1 && choice3 != 2 && choice3 != 3) {
+				cin >> choice3;
+				cin.clear();
+				cin.ignore();
+				cout << "Invalid input! Please enter correct option: " << endl;
+			}
+			switch (choice3) {
+			case 1:
+			{
+				string coachName;//need brackets to use variable inside 'case'
+				int coachId;
+				int coachExperience;
+				cout << "-------------------------" << endl;
+				cout << "Please enter new coach's name: ";
+				cin.get();
+				getline(cin, coachName);
+				cout << "Please enter new coach's id: ";
+				cin >> coachId;
+				cout << "Please enter new coach's experience: ";
+				cin >> coachExperience;
+				cout << "-------------------------" << endl;
+				AddCoach(coachName, coachId, coachExperience);
+			}
+				break;
+			case 2:
+			{
+				string playerName;
+				int playerId;
+				int playerExperience;
+				float winRate;
+				cout << "-------------------------" << endl;
+				cout << "Please enter new player's name: ";
+				cin.get();
+				getline(cin, playerName);
+				cout << "Please enter new player's id: ";
+				cin >> playerId;
+				cout << "Please enter new player's experience: ";
+				cin >> playerExperience;
+				cout << "Please enter new player's win-rate: ";
+				cin >> winRate;
+				cout << "-------------------------" << endl;
+				AddPlayer(playerName, playerId, playerExperience, winRate);
+			}
+				break;
+			case 3:
+				int courtId;
+				char courtType;
+				char courtSize;
+				cout << "Please enter new court's id: ";
+				cin >> courtId;
+				cout << "Please enter new court's type(Only char 'I' or 'O' represents indoor and outdoor): ";
+				cin >> courtType;
+				cout << "Please enter new court's size(Only char 'L','M','S', represents Large, Middle and Small): ";
+				cin >> courtSize;
+				cout << "-------------------------" << endl;
+				AddCourt(courtId, courtType, courtSize);
+			default:
+				cin.clear();
+				cin.ignore();
+				break;
+			}
+			break;
+		case 4:
+			int choice4;
+			cout << "-------------------------" << endl;
+			cout << "1. Sell court in the club" << endl;
+			cout << "2. Fire coach in the club" << endl;
+			cout << "3. Fire player in the club" << endl;
+			cout << "-------------------------" << endl;
+			cout << "Please enter your option: ";
+			cin >> choice4;
+			while (choice4 != 1 && choice4 != 2 && choice4 != 3) {
+				cin >> choice4;
+				cin.clear();
+				cin.ignore();
+				cout << "Invalid input! Please enter correct option: " << endl;
+			}
+			switch (choice4) {
+			case 1:
+				int courtID;
+				cout << "-------------------------" << endl;
+				printCourtList();
+				cout << "-------------------------" << endl;
+				cout << "Please enter court id which you want sell: ";
+				cin >> courtID;
+				RemoveCourt(courtID);
+				cout << "-------------------------" << endl;
+				break;
+			case 2:
+				int coachID;
+				cout << "-------------------------" << endl;
+				printCoachList();
+				cout << "-------------------------" << endl;
+				cout << "Please enter coach id whom you want fire: ";
+				cin >> coachID;
+				RemoveCoach(coachID);
+				cout << "-------------------------" << endl;
+				break;
+			case 3:
+				int playerID;
+				cout << "-------------------------" << endl;
+				printPlayerList();
+				cout << "-------------------------" << endl;
+				cout << "Please enter player id whom you want fire: ";
+				cin >> playerID;
+				RemovePlayer(playerID);
+				cout << "-------------------------" << endl;
+				break;
+			default:
+				cin.clear();
+				cin.ignore();
+				break;
+			}
+			break;
+		case 5:
+			int choice5;
+			cout << "-------------------------" << endl;
+			cout << "1. Assign a player to a coach" << endl;
+			cout << "2. Assign a coach to a court" << endl;
+			cout << "-------------------------" << endl;
+			cout << "Please enter your choice: ";
+			cin >> choice5;
+			while (choice5 != 1 && choice5 != 2) {
+				cin >> choice5;
+				cin.clear();
+				cin.ignore();
+				cout << "Invalid input! Please enter correct option: " << endl;
+			}
+			switch (choice5) {
+			case 1:
+			{
+				int CoachId;
+				int PlayerId;
+				cout << "-------------------------" << endl;
+				printCoachList();
+				cout << "-------------------------" << endl;
+				cout << "Please enter the coach id: ";
+				cin >> CoachId;
+				cout << "-------------------------" << endl;
+				printPlayerList();
+				cout << "Please enter the player id: ";
+				cin >> PlayerId;
+				AssignPlayerToCoach(PlayerId, CoachId);
+				cout << "-------------------------" << endl;
+			}
+				break;
+			case 2:
+				int CoachID;
+				int CourtId;
+				cout << "-------------------------" << endl;
+				printCourtList();
+				cout << "-------------------------" << endl;
+				cout << "Please enter the court id: ";
+				cin >> CourtId;
+				cout << "-------------------------" << endl;
+				printCoachList();
+				cout << "Plwase enter the coach id: ";
+				cin >> CoachID;
+				AssignCoachToCourt(CoachID, CourtId);
+				cout << "-------------------------" << endl;
+				break;
+			default:
+				cin.clear();
+				cin.ignore();
+				break;
+			}
+			break;
+		case 6:
+			cout << "Thank you for using my system!" << endl;
+			circle = true;
+			break;
+		default:
+			cin.clear();
+			cin.ignore();
+			break;
+		}
+		system("pause");
+		system("cls");
+	}
+}
 Club::~Club() {
 	while (!allPlayers.empty()) {
 		delete allPlayers.front();
