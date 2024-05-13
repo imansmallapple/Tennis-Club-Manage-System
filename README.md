@@ -12,8 +12,10 @@
 
 # Installation
 To use this program, please use the following command to clone the repo:
+```c
 git init
 git clone 
+```
 
 https://github.com/navendu-pottekkat/nsfw-filter.git
 [(Back to top)](#table-of-contents)
