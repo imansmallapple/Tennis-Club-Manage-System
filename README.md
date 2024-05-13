@@ -3,7 +3,6 @@
 # Table of Contents
 
 - [Tennis Club Management System](#Tennis-Club-Management-System)
-- [Quickstart/Demo](#quickstartdemo)
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -12,6 +11,11 @@
 - [License](#license)
 
 # Installation
+To use this program, please use the following command to clone the repo:
+git init
+git clone 
+
+https://github.com/navendu-pottekkat/nsfw-filter.git
 [(Back to top)](#table-of-contents)
 
 # Usage
